@@ -1,7 +1,7 @@
-var http = require('http');
+const express = require('express')
+const app = express()
+var port = 80
 
-http.createServer(function(request, response){
-  response.writeHead(200, {'Content-type':'text/plan'});
-  response.write('WAZAAP');
-  response.end( );
-}).listen(80);
+app.get('/', (req, res) => res.send('Hello World!'))
+
+app.listen(port, () => console.log('Example app listening on port '+ port +'!'))
