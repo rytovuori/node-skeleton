@@ -13,7 +13,7 @@ describe('GET /',() => {
       .expect(200)
       .end(function(err, res){
         assert(!err);
-        should.equal(res.body.msg, 'Hello Planet!');
+        should.equal(res.body.msg, 'Hello World!');
         done()
       });
 
