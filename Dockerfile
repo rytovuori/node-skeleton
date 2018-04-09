@@ -2,7 +2,7 @@ FROM node:alpine
 
 RUN mkdir dist
 
-COPY index.js /dist
+ADD src /dist/src
 COPY package.json /dist
 
 WORKDIR dist
